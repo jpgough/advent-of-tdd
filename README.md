@@ -35,6 +35,14 @@ Check your solution against the `exercise-1` branch.
 
 ### Exercise 2, Part 1: Spike - Reading in Input
 
+Reading input from a file in Java is not always straight forward.
+There will often be times that it is difficult to figure out which library you need or how to do something.
+In this Exercise we will create a spike, in this spike we're exploring without any pressure to test.
+You should experiment how to read the file into a `Collection<Elf>`.
+
+Spikes are a useful way to explore before we write our tests.
+Check out your spike vs the spike in the `exercise-2` branch.
+
 ### Exercise 3, Part 1: Integration Testing
 
 ### Exercise 4, Part 2: A New Part of the Problem
