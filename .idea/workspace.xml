@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8047563d-a377-465d-b5aa-b3ca9bca6951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/advent/day1/ElfCalorieCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/advent/day1/TestElfCalorieCounterShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/advent/day1/ElfCalorieCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/advent/day1/ElfCalorieCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/advent/day1/TestElfCalorieCounterShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/advent/day1/TestElfCalorieCounterShould.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <recent name="org.advent.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ElfReaderSpike">
+  <component name="RunManager" selected="JUnit.TestElfCalorieCounterShould">
     <configuration name="ElfReaderSpike" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.advent.day1.ElfReaderSpike" />
       <module name="advent-of-tdd" />
@@ -81,6 +80,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestElfCalorieCounterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="advent-of-tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.advent.day1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.advent.day1" />
+      <option name="MAIN_CLASS_NAME" value="org.advent.day1.TestElfCalorieCounterShould" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,8 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ElfReaderSpike" />
+        <item itemvalue="JUnit.TestElfCalorieCounterShould" />
         <item itemvalue="JUnit.TestElfShould" />
+        <item itemvalue="Application.ElfReaderSpike" />
         <item itemvalue="JUnit.TestElfShould.have_1000_total_calories_after_adding_1000" />
         <item itemvalue="JUnit.TestElfShould.have_zero_total_calories_when_created" />
       </list>
@@ -149,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699001321407</updated>
-      <workItem from="1699001322621" duration="7813000" />
+      <workItem from="1699001322621" duration="11016000" />
     </task>
     <servers />
   </component>
