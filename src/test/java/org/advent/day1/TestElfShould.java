@@ -29,12 +29,12 @@ public class TestElfShould {
     }
 
     @Test
-    void compare_return_negative_value_for_elf_with_less_total_calories() {
+    void compare_return_positive_value_for_elf_with_more_total_calories() {
         Elf bigElf = new Elf();
         bigElf.addCalories(5000);
         Elf smallElf = new Elf();
         smallElf.addCalories(3000);
-        assertThat(bigElf.compareTo(smallElf), lessThan(0));
+        assertThat(bigElf.compareTo(smallElf), greaterThan(0));
     }
 
     @Test
@@ -44,11 +44,11 @@ public class TestElfShould {
         assertThat(elf.compareTo(elf), equalTo(0));
     }
     @Test
-    void compare_return_positive_value_for_elf_with_more_total_calories() {
+    void compare_return_negative_value_for_elf_with_less_total_calories() {
         Elf bigElf = new Elf();
         bigElf.addCalories(5000);
         Elf smallElf = new Elf();
         smallElf.addCalories(3000);
-        assertThat(smallElf.compareTo(bigElf), greaterThan(0));
+        assertThat(smallElf.compareTo(bigElf), lessThan(0));
     }
 }
