@@ -66,5 +66,8 @@ You can find the solution and the expected value in the `exercise-3` branch.
 
 [Part 2](/day1-part2.md) brings in a change in the requirements. 
 The change is quite easy to implement, we now need to find the top 3 total calories for the Elves.
-Let's add a new test to `TestElfCalorieCounter` to finsh today's puzzle.
+Let's add a new test to `TestElfCalorieCounter` to finish today's puzzle.
 You can find the solution in the `exercise-4` branch.
+
+A big part of TDD is following the Red, Green, Refactor processes.
+Spend some time working through both the tests and the subject under test and refactor as necessary.
