@@ -60,5 +60,11 @@ Try and create a test and set up your mock for the following scenarios:
 
 Add a `Solution` class that uses the other part of the spike to read in the file and print the answer to the problem.
 Does it work as expected?
+You can find the solution and the expected value in the `exercise-3` branch.
 
 ### Exercise 4, Part 2: A New Part of the Problem
+
+[Part 2](/day1-part2.md) brings in a change in the requirements. 
+The change is quite easy to implement, we now need to find the top 3 total calories for the Elves.
+Let's add a new test to `TestElfCalorieCounter` to finsh today's puzzle.
+You can find the solution in the `exercise-4` branch.
