@@ -25,6 +25,6 @@ public class Elf implements Comparable<Elf> {
 
     @Override
     public int compareTo(Elf that) {
-        return that.getTotalCalories() - this.getTotalCalories();
+        return this.getTotalCalories() - that.getTotalCalories();
     }
 }
