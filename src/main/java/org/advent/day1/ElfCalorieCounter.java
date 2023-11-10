@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.stream.Collectors;
 
 public class ElfCalorieCounter {
     private Collection<Elf> elves = new ArrayList<>();
@@ -31,5 +33,13 @@ public class ElfCalorieCounter {
 
     public int maxCalories() {
         return elves.stream().max(Elf::compareTo).get().getTotalCalories();
+    }
+
+    public int maxThree() {
+        return elves.stream()
+                .sorted(Collections.reverseOrder())
+                .limit(3)
+                .map(Elf::getTotalCalories)
+                .collect(Collectors.summingInt(Integer::intValue));
     }
 }
