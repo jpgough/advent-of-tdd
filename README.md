@@ -1,20 +1,10 @@
-## Exercise 1
-### Part 2: Identifying tests from the requirements 
+## Exercise 2
+### Part 1: Spike - Reading in Input
 
-Lets look again at [Part 1](day1-part1.md) of the puzzle.
+Reading input from a file in Java is not always straight forward.
+There will often be times that it is difficult to figure out which library you need or how to do something.
+In this Exercise we will create a spike, in this spike we're exploring without any pressure to test.
+You should experiment how to read the input file in `/src/main/resources/day1-elf-calories.txt` into a `Collection<Elf>`.
 
-![Puzzle requirements](/assets/requirements2.png)
-
-The next part of the puzzle shows us what a puzzle input may look like and we can see for ourselves it represents 5 `Elves` because there are 5 separate blocks of numbers, each separated by a new line, which we already know represents creating a new `Elf`.
-
-What's more, the puzzle is actually giving us some test cases.
-* The first `Elf` should be carrying the sum of `1000 + 2000 + 3000 = 6000` calories
-* The second `Elf` is carrying only a single item so should have a calorie count of `4000`
-* The third `Elf` should be carrying the sum of `5000 + 6000 = 11000` calories
-* The fourth `Elf` should be carrying the sum of `7000 + 8000 + 9000 = 24000` calories
-* The fifth `Elf` is carrying only a single item so should have a calorie count of `10000`
-
-Add additional tests to the `TestElfShould` class to capture the above scenarios. 
-
-Once you're happy your solution can solve the provided test cases, lets go to [exercise-3](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-3-refactor)
-
+Spikes are a useful way to explore before we write our tests.
+Check out your spike vs the spike in the [exercise-2-part-2](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-2-part-2-refactor) branch.
