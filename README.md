@@ -1,5 +1,5 @@
 ## Exercise 2
-### Part 1: Spike - Reading in Input
+### Spike - Reading in Input
 
 Reading input from a file in Java is not always straight forward.
 There will often be times that it is difficult to figure out which library you need or how to do something.
