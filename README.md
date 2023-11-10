@@ -1,28 +1,13 @@
-## Exercise 3
-### Mock Testing and Putting Everything Together
+## Exercise 4
 
-You will can see a version of what we came up with in `/src/main/java/org/advent/day1/ElfReaderSpike`
+Were you able to get your first `Star`? If the result wasn't correct try taking a look at our `Solution` we have change the `day1-elf-calories.txt` to our personal input so you should get an anser of `70613`. If you don't try comparing your answer to ours to see where you may have gone wrong.
 
-Taking the content of the spike we created in exercise 2, let's create an `ElfCalorieCounter`.
-This is going to take a `BufferedReader` as input, which can be quite tricky to test.
-To test this collaboration we will use Mockito to create a mock `BufferedReader` and implement a few simple tests.
-This will allow us to control the input and test the behaviour.
+### A New Part of the Problem
 
-Try and create a test and set up your mock for the following scenarios:
-* When `BufferedReader` throws an `IOException` expect an `RuntimeException`
-* Creates an Elf when the file has two lines with 1000 and 3000 with value of 4000
-   * NB you will note that our spike code in the given example solution contains a bug, can you spot and correct this whilst writing your tests? 
-   * Add an `int maxElfCalories()` and test that it returns 4000
-* Creates a List<Elf> when the file has 5 lines with 1000, 3000, blank line, 5000, 5000
-   * `int maxElfCalories()` and test that it returns 10,000
+[Part 2](/day1-part2.md) brings in a change in the requirements, just like real life! 
+The change is quite easy to implement, we now need to find the top 3 total calories for the Elves.
+Let's add a new test to `TestElfCalorieCounter` to finish today's puzzle.
+You can find the solution in the [final](https://github.com/rocketstack-matt/advent-of-tdd/tree/final-refactor) branch.
 
-
-Add a `Solution` class that uses the other part of the spike to read in the input file and print the answer. We can add a new test class to test that the `Solution` class works by using the final example in the puzzle as a test.
-
-![Puzzle requirement](/assets/requirements3.png)
-
-You will find this input in `/src/test/resources/day1-elf-calories.txt` can you add another test which reads in the input and assert the answer matches the expected `24000`?
-
-Does it work as expected?
-
-You can find the solution and the expected value in the [exercise-4](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-4-refactor) branch.
+A big part of TDD is following the Red, Green, Refactor processes.
+Spend some time working through both the tests and the subject under test and refactor as necessary.
