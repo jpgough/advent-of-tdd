@@ -1,6 +1,6 @@
 ## Exercise 4
 
-Were you able to get your first `Star`? If the result wasn't correct try taking a look at our `Solution` we have change the `day1-elf-calories.txt` to our personal input so you should get an anser of `70613`. If you don't try comparing your answer to ours to see where you may have gone wrong.
+Were you able to get your first `Star`? If the result wasn't correct try taking a look at our `Solution` we have change the `day1-elf-calories.txt` to our personal input so you should get an anser of `70613`. If you don't try comparing your `Solution` implementation to ours to see where you may have gone wrong.
 
 ### A New Part of the Problem
 
