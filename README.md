@@ -17,12 +17,14 @@ Try and create a test and set up your mock for the following scenarios:
    * `int maxElfCalories()` and test that it returns 10,000
 
 
-Add a `Solution` class that uses the other part of the spike to read in the input file and print the answer. We can add a new test class to test that the `Solution` class works by using the final example in the puzzle as a test.
+Add a `Solution` class that uses the other part of the spike to read in the input file and print the answer. 
 
 ![Puzzle requirement](/assets/requirements3.png)
 
-You will find this input in `/src/test/resources/day1-elf-calories.txt` can you add another test which reads in the input and assert the answer matches the expected `24000`?
+The input file we have given you at `/src/main/resources/day1-elf-calories.txt` matches the input we were given in the example, does your `Solution` print `24000` as expected?
+
+If it does, it's time to get your first `Star`; each contestants input is unique to themselves (to ensure you solved it rather than seeing someone else's answer). Make sure you're logged into [Advent of Code](https://adventofcode.com/) and you should be able to get your personal puzzle input [here](https://adventofcode.com/2022/day/1/input). Replace the contents of `day1-elf-calories.txt` with your personal input and rerun the solution to get your answer!
 
 Does it work as expected?
 
-You can find the solution and the expected value in the [exercise-4](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-4-refactor) branch.
+You can find the solution and the expected value based on our input file in the [exercise-4](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-4-refactor) branch.
