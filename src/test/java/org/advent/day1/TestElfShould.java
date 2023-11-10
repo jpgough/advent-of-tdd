@@ -20,11 +20,6 @@ public class TestElfShould {
     }
 
     @Test
-    void have_total_calories_equal_to_all_added_calories() {
-        fail("Not yet implemented");
-    }
-
-    @Test
     void compare_return_positive_value_for_elf_with_more_total_calories() {
         fail("Not yet implemented");
     }

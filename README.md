@@ -23,7 +23,6 @@ This exercise is going to be quite simple, but let's focus on creating the follo
 * Create an `Elf` and `assertThat` it has `getTotalCalories` of 0. 
 This is our post condition of creating an `Elf`.
 * Now let's use the example case to `addCalories(1000)` and call `getTotalCalories` to `assertThat` it is equal to 1000.
-* Now let's `addCalories(1000)`, `addCalories(2000)`, `addCalories(3000)` and call `getTotalCalories` to `assertThat` it is equal to 6000.
 * Given that we're going to need to find the max calories, we're going to need to compare `Elf`s together. 
 Let's use the Java standard for Comparing (e.g. `Comparable<Elf>`) to write some tests to compare `Elfs` for their total calories
 You only need two tests for this.
