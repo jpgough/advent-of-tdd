@@ -1,6 +1,8 @@
 ## Exercise 3
 ### Mock Testing and Putting Everything Together
 
+You will can see a version of what we came up with in `/src/main/java/org/advent/day1/ElfReaderSpike`
+
 Taking the content of the spike we created in exercise 2, let's create an `ElfCalorieCounter`.
 This is going to take a `BufferedReader` as input, which can be quite tricky to test.
 To test this collaboration we will use Mockito to create a mock `BufferedReader` and implement a few simple tests.
