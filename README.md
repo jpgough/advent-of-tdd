@@ -16,9 +16,12 @@ Try and create a test and set up your mock for the following scenarios:
 * Creates a List<Elf> when the file has 5 lines with 1000, 3000, blank line, 5000, 5000
    * `int maxElfCalories()` and test that it returns 10,000
 
-Add a `Solution` class that uses the other part of the spike to read in the input file and print the answer to the problem per the final part of the puzzle.
+
+Add a `Solution` class that uses the other part of the spike to read in the input file and print the answer. We can add a new test class to test that the `Solution` class works by using the final example in the puzzle as a test.
 
 ![Puzzle requirement](/assets/requirements3.png)
+
+You will find this input in `/src/test/resources/day1-elf-calories.txt` can you add another test which reads in the input and assert the answer matches the expected `24000`?
 
 Does it work as expected?
 
