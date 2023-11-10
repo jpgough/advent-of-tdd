@@ -16,5 +16,5 @@ What's more, the puzzle is actually giving us some test cases.
 
 Add additional tests to the `TestElfShould` class to capture the above scenarios. 
 
-Once you're happy your solution can solve the provided test cases, lets go to [exercise-3](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-3-refactor)
+Once you're happy your solution can solve the provided test cases, lets go to [exercise-2](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-2-refactor)
 
