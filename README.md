@@ -1,10 +1,21 @@
-## Exercise 2
-### Part 1: Spike - Reading in Input
+## Exercise 3
+### Mock Testing and Putting Everything Together
 
-Reading input from a file in Java is not always straight forward.
-There will often be times that it is difficult to figure out which library you need or how to do something.
-In this Exercise we will create a spike, in this spike we're exploring without any pressure to test.
-You should experiment how to read the input file in `/src/main/resources/day1-elf-calories.txt` into a `Collection<Elf>`.
+Taking the content of the spike we created in exercise 2, let's create an `ElfCalorieCounter`.
+This is going to take a `BufferedReader` as input, which can be quite tricky to test.
+To test this collaboration we will use Mockito to create a mock `BufferedReader` and implement a few simple tests.
+This will allow us to control the input and test the behaviour.
 
-Spikes are a useful way to explore before we write our tests.
-Check out your spike vs the spike in the [exercise-3](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-3-refactor) branch.
+Try and create a test and set up your mock for the following scenarios:
+* When `BufferedReader` throws an `IOException` expect an `RuntimeException`
+* Creates an Elf when the file has two lines with 1000 and 3000 with value of 4000
+   * NB you will note that our spike code in the given example solution contains a bug, can you spot and correct this whilst writing your tests? 
+   * Add an `int maxElfCalories()` and test that it returns 4000
+* Creates a List<Elf> when the file has 5 lines with 1000, 3000, blank line, 5000, 5000
+   * `int maxElfCalories()` and test that it returns 10,000
+
+Add a `Solution` class that uses the other part of the spike to read in the input file and print the answer to the problem.
+
+Does it work as expected?
+
+You can find the solution and the expected value in the [exercise-4](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-4-refactor) branch.
