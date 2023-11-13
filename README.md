@@ -1,6 +1,8 @@
 ## Exercise 2
 ### Spike - Reading in Input
 
+In addition to the problem itself, the instructions have also told us that we're going to get a puzzle input, which is in the form of a text file. During our work so far we have focused on using test cases to drive our development, but sometimes you also need to experiment to understand how to solve part of a problem, especially when dealing with things outside the pure business logic of your application.
+
 Reading input from a file in Java is not always straight forward.
 There will often be times that it is difficult to figure out which library you need or how to do something.
 In this Exercise we will create a spike, in this spike we're exploring without any pressure to test.
