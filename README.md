@@ -31,5 +31,5 @@ If you want to make it even easier you can use [GitHub Codespaces](https://githu
 
 ## Let's get started
 
-If you're ready to go, switch to the [exercise-1](/tree/exercise-1) branch and get moving. Happy coding!
+If you're ready to go, switch to the [exercise-1](https://github.com/jpgough/advent-of-tdd/tree/exercise-1) branch and get moving. Happy coding!
 
