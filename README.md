@@ -27,4 +27,4 @@ If it does, it's time to get your first `Star`; each contestants input is unique
 
 Does it work as expected?
 
-You can find the solution and the expected value based on our input file in the [exercise-4](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-4-refactor) branch.
+You can find the solution and the expected value based on our input file in the [exercise-4](https://github.com/jpgough/advent-of-tdd/tree/exercise-4) branch.
