@@ -1,19 +1,5 @@
 ## Exercise 1
-### Part 1: Breaking up the Problem - Unit Testing 
-
-Start by reading the instructions for [Part 1](day1-part1.md).
-As with regular requirements, there's a lot of extra information surrounding what you need to implement.
-To solve the first part of the problem there are a few pieces to consider.
-
-Let's look at the first part of the puzzle.
-
-![Puzzle requirements](/assets/requirements1.png)
-
-Most of the text is actually just setting the scene for the competition and how you will 'win' stars. The first real piece of information is all the way towards the end of the fourth paragraph. From this one sentence we can ascertain that Elves are going to carry food and each food will contain a certain number of `Calories`
-
-You are not going to go straight to getting the answer required by the exercise, instead we are going to start by focusing on the `Elf`.
-
-![Elves sat in a jungle](/assets/elves.png)
+### Part 2: Identifying tests from the requirements 
 
 Looking at the problem the `Elf` is a key domain object and is a good place to start.
 Looking at the last line in the text above we can also see that we're likely going to need to read in a file (our puzzle input) line by line.
