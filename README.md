@@ -9,4 +9,4 @@ In this Exercise we will create a spike, in this spike we're exploring without a
 You should experiment how to read the input file in `/src/main/resources/day1-elf-calories.txt` into a `Collection<Elf>`.
 
 Spikes are a useful way to explore before we write our tests.
-Check out your spike vs the spike in the [exercise-3](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-3-refactor) branch.
+Check out your spike vs the spike in the [exercise-3](https://github.com/jpgough/advent-of-tdd/tree/exercise-3) branch.
