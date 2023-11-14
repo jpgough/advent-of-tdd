@@ -31,4 +31,4 @@ In the `/src/main/java/org/advent/day1` package you will find a partially implem
 
 Try to implement all the other suggested test cases and update the `Elf` class to add the additional functionality required for them to pass.
 
-When you're ready to move on go to the [exercise-1-part-2](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-1-part-2-refactor) branch where you will also find one possible solution to the problem and the passing test cases.
+When you're ready to move on go to the [exercise-1-part-2](https://github.com/jpgough/advent-of-tdd/tree/exercise-1-part-2) branch where you will also find one possible solution to the problem and the passing test cases.
