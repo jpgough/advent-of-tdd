@@ -1,6 +1,5 @@
 package org.advent.day1;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -12,7 +11,6 @@ import java.io.IOException;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -36,7 +34,7 @@ public class TestElfCalorieCounterShould {
     }
 
     @Test
-    void create_two_elves_with_max_of_10_000(@Mock BufferedReader mockReader) throws IOException {
+    void should_create_two_elves_with_max_of_10_000(@Mock BufferedReader mockReader) throws IOException {
         when(mockReader.readLine()).thenReturn("1000")
                 .thenReturn("3000")
                 .thenReturn("")

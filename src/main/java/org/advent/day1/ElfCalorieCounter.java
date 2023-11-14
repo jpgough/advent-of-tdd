@@ -35,11 +35,4 @@ public class ElfCalorieCounter {
     public int maxCalories() {
         return elves.stream().max(Elf::compareTo).get().getTotalCalories();
     }
-    public int maxThree() {
-        return elves.stream()
-                .sorted(Collections.reverseOrder())
-                .limit(3)
-                .map(Elf::getTotalCalories)
-                .collect(Collectors.summingInt(Integer::intValue));
-    }
 }

@@ -20,15 +20,6 @@ public class TestElfShould {
     }
 
     @Test
-    void have_total_calories_equal_to_all_added_calories() {
-        Elf elf = new Elf();
-        elf.addCalories(1000);
-        elf.addCalories(2000);
-        elf.addCalories(3000);
-        assertThat(elf.getTotalCalories(), equalTo(6000));
-    }
-
-    @Test
     void compare_return_positive_value_for_elf_with_more_total_calories() {
         Elf bigElf = new Elf();
         bigElf.addCalories(5000);
@@ -51,4 +42,45 @@ public class TestElfShould {
         smallElf.addCalories(3000);
         assertThat(smallElf.compareTo(bigElf), lessThan(0));
     }
+
+    @Test
+    void have_total_calories_equal_to_all_added_calories_for_elf_1() {
+        Elf elf = new Elf();
+        elf.addCalories(1000);
+        elf.addCalories(2000);
+        elf.addCalories(3000);
+        assertThat(elf.getTotalCalories(), equalTo(6000));
+    }
+
+    @Test
+    void have_total_calories_equal_to_all_added_calories_for_elf_2() {
+        Elf elf = new Elf();
+        elf.addCalories(4000);
+        assertThat(elf.getTotalCalories(), equalTo(4000));
+    }
+
+    @Test
+    void have_total_calories_equal_to_all_added_calories_for_elf_3() {
+        Elf elf = new Elf();
+        elf.addCalories(5000);
+        elf.addCalories(6000);
+        assertThat(elf.getTotalCalories(), equalTo(11000));
+    }
+
+    @Test
+    void have_total_calories_equal_to_all_added_calories_for_elf_4() {
+        Elf elf = new Elf();
+        elf.addCalories(7000);
+        elf.addCalories(8000);
+        elf.addCalories(9000);
+        assertThat(elf.getTotalCalories(), equalTo(24000));
+    }
+
+    @Test
+    void have_total_calories_equal_to_all_added_calories_for_elf_5() {
+        Elf elf = new Elf();
+        elf.addCalories(10000);
+        assertThat(elf.getTotalCalories(), equalTo(10000));
+    }
 }
+
