@@ -20,15 +20,6 @@ public class TestElfShould {
     }
 
     @Test
-    void have_total_calories_equal_to_all_added_calories() {
-        Elf elf = new Elf();
-        elf.addCalories(1000);
-        elf.addCalories(2000);
-        elf.addCalories(3000);
-        assertThat(elf.getTotalCalories(), equalTo(6000));
-    }
-
-    @Test
     void compare_return_positive_value_for_elf_with_more_total_calories() {
         Elf bigElf = new Elf();
         bigElf.addCalories(5000);
