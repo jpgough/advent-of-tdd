@@ -3,10 +3,13 @@ package org.advent.day1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ElfCalorieCounter {
-    private Collection<Elf> elves = new ArrayList<>();
+    private final List<Elf> elves = new ArrayList<>();
 
     public ElfCalorieCounter(BufferedReader bufferedReader) {
         try {

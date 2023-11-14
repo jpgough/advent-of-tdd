@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+
 public class Solution {
 
-    // Expected answer is 70613
-    public static void main(String[] args) {
+public static void main(String[] args) {
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream is = classloader.getResourceAsStream("day1-elf-calories.txt");
 

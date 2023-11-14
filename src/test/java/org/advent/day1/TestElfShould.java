@@ -83,3 +83,4 @@ public class TestElfShould {
         assertThat(elf.getTotalCalories(), equalTo(10000));
     }
 }
+
