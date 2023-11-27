@@ -17,7 +17,7 @@ In the following exercises you will review the day 1 instructions, design and im
 
 The workshop is split up by branches, each branch will provide you with the next exercise which you will work through yourself to try and solve. In each subsequent exercise we will also provide a possible solution for the prior exercise, so you if you do get stuck you can look at what you may have missed.
 
-You are currently in the `main` branch. You will see other branches called `exercise-1` to `exercise-4` you should work you way through these branches in numerical order to work your way through the tutorial.
+You are currently in the `main` branch. You will see other branches called `exercise-1` to `exercise-4 and final` you should work you way through these branches in numerical order to work your way through the tutorial.
 
 ## Getting setup
 
@@ -25,11 +25,13 @@ Whilst you're welcome to follow these exercises in any language of your choosing
 
 We've tried to make this workshop as accessible as possible. Every branch contains a `.devcontainer` folder which is a preconfigured development environment.
 
-To get started we recommend you `fork` this repo so you have your own copy to work on. You can either clone your fork to your local computer and work with any IDE or text editor of your choice, but if you use one which supports [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) such as VS Code then the `.devcontainers` configuration in this repo will suggest you install the devcontainers extension and if you do so then it can use that information to automatically install the tools you will need including the JDK and Maven.
+To get started we recommend you `fork` this repo so you have your own copy to work on, when forking the repo select the option to fork all branches, if you forget to choose that then you can run `git fetch --all`. You can either clone your fork to your local computer and work with any IDE or text editor of your choice, but if you use one which supports [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) such as VS Code then the `.devcontainers` configuration in this repo will suggest you install the devcontainers extension and if you do so then it can use that information to automatically install the tools you will need including the JDK and Maven.
 
-If you want to make it even easier you can use [GitHub Codespaces](https://github.com/features/codespaces) which are cloud hosted development environments. Every GitHub account comes with a number of free devcontainer hours, even the free ones, so if you would like to do that take a look at the [codespaces](https://github.com/rocketstack-matt/advent-of-tdd/tree/codespaces) branch which will explain in detail how to use them.
+If you want to make it even easier you can use [GitHub Codespaces](https://github.com/features/codespaces) which are cloud hosted development environments. Every GitHub account comes with a number of free devcontainer hours, even the free ones, so if you would like to do that take a look at the [codespaces](https://github.com/jpgough/advent-of-tdd/tree/codespaces) branch which will explain in detail how to use them.
+
+The recommended approach for completing the exercises is to start working from exercise-1 and read the instructions via the browser so you don't need to keep checking out each branch. However, if you really get stuck and can't get your code to work, you can checkout the next exercise branch which will provide you with a complete working solution up to the prior exercise.
 
 ## Let's get started
 
-If you're ready to go, switch to the [exercise-1](https://github.com/rocketstack-matt/advent-of-tdd/tree/exercise-1-refactor) branch and get moving. Happy coding!
+If you're ready to go, switch to the [exercise-1](https://github.com/jpgough/advent-of-tdd/tree/exercise-1) branch and get moving. Happy coding!
 
