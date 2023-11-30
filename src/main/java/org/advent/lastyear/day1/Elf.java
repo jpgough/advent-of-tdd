@@ -1,4 +1,4 @@
-package org.advent.day1;
+package org.advent.lastyear.day1;
 
 /**
  * Elf that is assigned calories

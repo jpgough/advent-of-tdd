@@ -1,14 +1,13 @@
-package org.advent.day1;
+package org.advent.lastyear.day1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.stream.Collectors;
 
 public class ElfCalorieCounter {
-    private Collection<Elf> elves = new ArrayList<>();
+    private final Collection<Elf> elves = new ArrayList<>();
 
     public ElfCalorieCounter(BufferedReader bufferedReader) {
         try {
@@ -39,7 +38,6 @@ public class ElfCalorieCounter {
         return elves.stream()
                 .sorted(Collections.reverseOrder())
                 .limit(3)
-                .map(Elf::getTotalCalories)
-                .collect(Collectors.summingInt(Integer::intValue));
+                .map(Elf::getTotalCalories).mapToInt(Integer::intValue).sum();
     }
 }

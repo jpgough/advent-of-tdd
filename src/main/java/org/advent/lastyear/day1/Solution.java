@@ -1,4 +1,4 @@
-package org.advent.day1;
+package org.advent.lastyear.day1;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
