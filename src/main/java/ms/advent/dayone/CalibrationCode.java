@@ -54,7 +54,7 @@ public class CalibrationCode {
 
         while (rightDigit.isEmpty()) {
             for (String numberString: numberStrings.keySet()) {
-                if (String.valueOf(rightSubString).contains(numberString)) {
+                if (rightSubString.contains(numberString)) {
                     rightDigit = numberStrings.get(numberString);
                     break;
                 }
@@ -63,7 +63,7 @@ public class CalibrationCode {
             if (rightDigit.isEmpty() && isDigit(code.charAt(rightPointer))) {
                 rightDigit = String.valueOf(code.charAt(rightPointer));
             } else if (rightDigit.isEmpty()) {
-                rightSubString = code.charAt(rightPointer) + rightSubString;
+                rightSubString = String.valueOf(code.charAt(rightPointer)).concat(rightSubString);
                 rightPointer--;
             }
         }
@@ -72,14 +72,9 @@ public class CalibrationCode {
     }
 
     public int getTwoDigitCode(String code) {
-        System.out.println(code);
-
         String firstDigit = this.getFirstNum(code);
-        System.out.println(firstDigit);
         String lastDigit = this.getLastNum(code);
-        System.out.println(lastDigit);
         String twoDigit = firstDigit + lastDigit;
-
         return Integer.parseInt(twoDigit);
     }
 
