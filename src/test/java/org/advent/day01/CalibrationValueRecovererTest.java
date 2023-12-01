@@ -125,4 +125,44 @@ public class CalibrationValueRecovererTest {
         assertEquals(142, underTest);
     }
 
+    @Test
+    public void findsFirstDigitInSpelledOutString() {
+        var underTest = new CalibrationValueRecoverer();
+        assertEquals('2', underTest.findFirstDigit("two1nine"));
+        assertEquals('8', underTest.findFirstDigit("eightwothree"));
+        assertEquals('1', underTest.findFirstDigit("abcone2threexyz"));
+        assertEquals('2', underTest.findFirstDigit("xtwone3four"));
+        assertEquals('4', underTest.findFirstDigit("4nineeightseven2"));
+        assertEquals('1', underTest.findFirstDigit("zoneight234"));
+        assertEquals('7', underTest.findFirstDigit("7pqrstsixteen"));
+    }
+
+    @Test
+    public void findsLastDigitInSpelledOutString() {
+        var underTest = new CalibrationValueRecoverer();
+        assertEquals('9', underTest.findLastDigit("two1nine"));
+        assertEquals('3', underTest.findLastDigit("eightwothree"));
+        assertEquals('3', underTest.findLastDigit("abcone2threexyz"));
+        assertEquals('4', underTest.findLastDigit("xtwone3four"));
+        assertEquals('2', underTest.findLastDigit("4nineeightseven2"));
+        assertEquals('4', underTest.findLastDigit("zoneight234"));
+        assertEquals('6', underTest.findLastDigit("7pqrstsixteen"));
+    }
+
+    @Test
+    public void sumsCalibrationValuesRecoveredFromListContainingSpelledOutStrings() {
+        var lines = Arrays.asList(
+                "two1nine",
+                "eightwothree",
+                "abcone2threexyz",
+                "xtwone3four",
+                "4nineeightseven2",
+                "zoneight234",
+                "7pqrstsixteen"
+        );
+
+        var underTest = new CalibrationValueRecoverer().sum(lines);
+        assertEquals(281, underTest);
+    }
+
 }

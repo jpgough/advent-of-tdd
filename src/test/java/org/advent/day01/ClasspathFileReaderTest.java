@@ -1,6 +1,5 @@
 package org.advent.day01;
 
-import org.advent.day01.ClasspathFileReader;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,7 +16,7 @@ public class ClasspathFileReaderTest {
 
     @Test
     public void readsLinesIntoListFromFile() {
-        var underTest = new ClasspathFileReader().readAllLines("day01.test");
+        var underTest = new ClasspathFileReader().readAllLines("day01-part1.test");
         assertEquals(4, underTest.size());
         assertEquals("1abc2", underTest.get(0));
         assertEquals("pqr3stu8vwx", underTest.get(1));
