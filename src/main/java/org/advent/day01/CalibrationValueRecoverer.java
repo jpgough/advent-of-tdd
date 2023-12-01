@@ -28,7 +28,6 @@ public class CalibrationValueRecoverer {
 
     public char findFirstDigit(String line) {
         for (var i = 0; i < line.length(); i++) {
-            var c = line.charAt(i);
             if (Character.isDigit(line.charAt(i))) {
                 return line.charAt(i);
             }
